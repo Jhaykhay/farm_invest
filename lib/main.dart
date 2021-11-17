@@ -1,7 +1,7 @@
+import 'package:agro_investment/Views/onboarding/onboarding_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 // import 'Views/Authentication/signup_page.dart';
-import 'Views/Screens/startup_view.dart';
 // import 'Views/Screens/home_view.dart';
 
 void main() {
@@ -16,10 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const StartupView(),
+      home: Onboarding(),
     );
   }
 }
