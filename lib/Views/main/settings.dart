@@ -1,4 +1,7 @@
 import 'package:agro_investment/Views/Authentication/login_page.dart';
+import 'package:agro_investment/Views/others/about_greenland.dart';
+import 'package:agro_investment/Views/others/help_support.dart';
+import 'package:agro_investment/Views/payments/saved_cards.dart';
 import 'package:agro_investment/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
@@ -107,7 +110,7 @@ class _SettingsPageState extends State<SettingsPage> {
             profileItems(context,
                 icon: 'assets/icons/savedcards.png',
                 text: 'Saved Cards', OnPressed: () {
-              // Get.to(() => SavedCards());
+              Get.to(() => Savedcards());
             }),
             SizedBox(
               height: 8,
@@ -134,7 +137,12 @@ class _SettingsPageState extends State<SettingsPage> {
             profileItems(context,
                 icon: 'assets/icons/aboutajobox.png',
                 text: 'About Greenland', OnPressed: () {
-              //  Get.to(() => AboutAjobox());
+              Get.to(() => AboutPage());
+            }),
+            profileItems(context,
+                icon: 'assets/icons/helpsupport.png',
+                text: 'Help and Support', OnPressed: () {
+              Get.to(() => HelpSupportPage());
             }),
             profileItems(context,
                 icon: 'assets/icons/aboutajobox.png',

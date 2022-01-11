@@ -12,6 +12,8 @@ TextStyle headerStyle() =>
     TextStyle(fontWeight: FontWeight.w500, fontFamily: 'Alata', fontSize: 24);
 TextStyle subHeaderStyle() =>
     TextStyle(color: Color(0xFF555555), height: 1.4, fontSize: 14);
+TextStyle greylabelStyle() =>
+    TextStyle(fontSize: 10, fontFamily: 'Poppins', color: GREY);
 
 const String EMPTY_EMAIL_FIELD = 'Email field cannot be empty!';
 const String EMPTY_TEXT_FIELD = 'Field cannot be empty!';
